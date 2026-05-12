@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Awera Web Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#d8e3fb",
+            "background": "#051424",
+            "primary-fixed": "#2ECC71", // Updated to Brand Emerald Green
+            "on-background": "#d4e4fa",
+            "secondary-container": "#3f4758",
+            "surface-container-high": "#1c2b3c",
+            "surface-container-lowest": "#010f1f",
+            "primary-fixed-dim": "#27ae60", // Darker shade for hover
+            "tertiary-fixed-dim": "#bcc7de",
+            "secondary-fixed-dim": "#bfc6db",
+            "inverse-surface": "#d4e4fa",
+            "error": "#ffb4ab",
+            "outline-variant": "#424936",
+            "on-primary-fixed-variant": "#00391c",
+            "inverse-primary": "#006d33",
+            "on-tertiary-fixed-variant": "#3c475a",
+            "on-primary-fixed": "#00210e", // Dark contrast text for emerald buttons
+            "surface-container": "#122131",
+            "on-tertiary-fixed": "#111c2d",
+            "outline": "#8b947c",
+            "on-secondary": "#293041",
+            "surface-container-low": "#0d1c2d",
+            "surface-container-highest": "#273647",
+            "primary-container": "#2ECC71",
+            "on-surface-variant": "#c1cab0",
+            "on-secondary-fixed-variant": "#3f4758",
+            "surface": "#051424",
+            "secondary": "#bfc6db",
+            "on-primary-container": "#00210e",
+            "on-secondary-container": "#adb5c9",
+            "on-tertiary-container": "#5a6579",
+            "surface-bright": "#2c3a4c",
+            "on-secondary-fixed": "#141c2b",
+            "error-container": "#93000a",
+            "tertiary": "#ffffff",
+            "on-surface": "#d4e4fa",
+            "surface-tint": "#2ECC71",
+            "surface-dim": "#051424",
+            "inverse-on-surface": "#233143",
+            "secondary-fixed": "#dbe2f8",
+            "primary": "#ffffff",
+            "on-primary": "#00391c",
+            "on-error": "#690005",
+            "surface-variant": "#273647",
+            "tertiary-fixed": "#d8e3fb",
+            "on-error-container": "#ffdad6",
+            "on-tertiary": "#263143"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "sm": "12px",
+            "gutter": "24px",
+            "md": "24px",
+            "lg": "48px",
+            "container-max": "1280px",
+            "base": "8px",
+            "xs": "4px",
+            "xl": "80px"
+          },
+          "fontFamily": {
+            "label-bold": ["Be Vietnam Pro"],
+            "headline-lg": ["Be Vietnam Pro"],
+            "label-sm": ["Be Vietnam Pro"],
+            "body-lg": ["Be Vietnam Pro"],
+            "body-md": ["Be Vietnam Pro"],
+            "headline-md": ["Be Vietnam Pro"],
+            "headline-xl": ["Be Vietnam Pro"]
+          },
+          "fontSize": {
+            "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+            "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      background-color: #051424;
+      color: #d4e4fa;
+    }
+    .technical-border {
+      border: 1px solid #1E293B;
+    }
+    .emerald-glow:hover {
+      box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
+      border-color: #2ECC71;
+    }
+    .active-scale:active {
+      transform: scale(0.95);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-sm bg-background border-b border-outline-variant">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer">menu</span>
+<h1 class="font-headline-md font-bold text-on-background text-2xl md:text-headline-md">Awera Web Agency</h1>
+</div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-200 font-label-bold text-label-bold" href="#">Home</a>
+<a class="text-primary-fixed font-bold font-label-bold text-label-bold" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-200 font-label-bold text-label-bold" href="#">Services &amp; Pricing</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-200 font-label-bold text-label-bold" href="#">Portfolio</a>
+</nav>
+<button class="bg-primary-fixed text-on-primary-fixed px-md py-sm font-label-bold text-label-bold rounded hover:bg-primary-fixed-dim transition-all active-scale">
+      LET'S TALK
+    </button>
+</header>
+<main class="pt-[100px]">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row items-center gap-xl">
+<div class="flex-1 space-y-md">
+<div class="inline-flex items-center gap-xs bg-surface-container px-sm py-xs rounded-full border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">HACKNEY ROOTS / GLOBAL VISION</span>
+</div>
+<h2 class="font-headline-xl text-on-background text-4xl md:text-headline-xl leading-tight">Precision Engineering for Digital Dominance.</h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg max-w-2xl">
+          Born in the creative crucible of Hackney, East London, Awera is where high-performance engineering meets premium aesthetics. We don't just build websites; we architect growth engines for those who refuse to settle for average.
+        </p>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-square rounded-xl overflow-hidden technical-border relative z-10">
+<img alt="Team working in Hackney" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A cinematic, high-contrast photograph of a group of focused web developers in a minimalist Hackney studio. The room features exposed brick walls, sleek black desks, and multiple high-resolution monitors glowing with complex code. The lighting is low and moody, with sharp emerald-green highlights from LED strips integrated into the furniture. The overall aesthetic is professional, technical, and exudes an atmosphere of high-end digital craftsmanship." src="https://lh3.googleusercontent.com/aida/ADBb0uhfAHP6E2X-6GrkUHpQ5E9liTEJs3AdoJVtjAXEjLaMexwN6IfFkI8DCaFfvnRn881Adopy_phSLysXjL2QNAq6d8XKHhk2FCMeQP4SdbGLHIs1eDVPJ0zikw_3t7Nfh6kdMeVUb0rlmfqA2fSETnZmPnGwr-N02f21R-qSZGbmewMWnt_adQitnapqpTPA-AvB75z_KLdUYDiiguFVbCDfe1G0KINU6DDWxCo5jZwUPtRG5wXMopsF8ale_qfnmUgf6tA-m43GmA"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-primary-fixed/10 rounded-full blur-3xl -z-0"></div>
+</div>
+</section>
+<!-- Mission & Technical Rigor (Bento Style) -->
+<section class="bg-surface-container-low py-xl border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="md:col-span-2 bg-surface p-lg technical-border rounded-xl flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-primary-fixed mb-sm text-3xl md:text-headline-md">Our Mission</h3>
+<p class="font-body-lg text-body-lg text-on-surface max-w-xl">
+                To bridge the gap between technical complexity and intuitive user experiences. We empower high-ticket clients with the digital infrastructure required to scale aggressively and dominate their market segment.
+              </p>
+</div>
+<div class="flex gap-lg mt-lg flex-wrap md:flex-nowrap">
+<div>
+<div class="font-headline-md text-headline-md text-on-background">99.9%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Uptime Reliability</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-background">4.2x</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Avg. Conversion Lift</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-background">0.4s</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">LCP Speed</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-lg technical-border rounded-xl emerald-glow transition-all">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-md">precision_manufacturing</span>
+<h4 class="font-headline-md text-headline-md text-on-background mb-sm">Technical Precision</h4>
+<p class="text-on-surface-variant">
+              Every line of code we write is scrutinized for performance, accessibility, and SEO. We use modern stacks—Tailwind, React, and Edge compute—to ensure your site is as fast as it is beautiful.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Team Section -->
+<section class="max-w-container-max mx-auto px-gutter py-xl">
+<div class="mb-lg text-center">
+<h2 class="font-headline-lg text-on-background text-4xl md:text-headline-lg">The Architects</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Meet the experts behind Awera's commitment to excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Elias Thorne -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-highest technical-border rounded-xl overflow-hidden mb-sm relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of Elias Thorne, a sharp-featured man in his late 30s with a confident expression. He is wearing a dark charcoal turtleneck and is set against a moody, deep navy background. The lighting is dramatic, highlighting the contours of his face in a style reminiscent of high-end business editorial photography. Subtle emerald light reflects on the side of his face." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeZgnGqQEo16ds3kbWu-9oKJm-J50bRRxqFFV2nSLxS9j8jdH89mg_4tTXclwDInXap_yKDY1MlneeLS6FLryE7Jg59xX-6nFJwh6gqLT7PqGI9vZ7qUKQpWWloTLXbp8swF-DGfMXJgEj8oh0a7Ezw2HkkOO-HyCQiE1AEisdm1v7aARrhA4KLf7geMZ-Wq2p8z1r_8OqVo0g_Pbd31MWbGZWzi1cqDkUI62RdVJJ04mZTltxQ_ML4lM1OtaKhxkTyO7PaPUjL1BH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">Elias Thorne</h3>
+<p class="font-label-bold text-label-bold text-primary-fixed mb-sm">Founder &amp; Creative Director</p>
+<p class="text-on-surface-variant font-body-md text-body-md">Visionary leader with 15 years in luxury branding and digital strategy. Elias ensures every project meets our rigorous aesthetic standards.</p>
+</div>
+<!-- Marcus Vane -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-highest technical-border rounded-xl overflow-hidden mb-sm relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A sharp, technical portrait of Marcus Vane, a man in his early 40s with glasses and an intelligent gaze. He is wearing a minimalist black hoodie in a high-tech laboratory setting with soft-focus server racks in the background. The scene is bathed in a dark navy blue light with sharp electric emerald accents highlighting his spectacles and hands." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCInaMc__oOFrv7O18ZsdO_8aBB5lZdzuW7LQ3wb6qYAJ_m2mT2IjveU2Jc5kFH0ijD4CcC57Jc-8GUrj-XPYpNGGIhr8OtZlwVFdNuTgVNFt2kQQKEP2_57mjJw-BmyRhOvPLadYAQ8gjmSxZXNB1s7wiFQirvx-i4I8kUxlDlI1AdsyfuQEm1ULV3C-WbPW7-e6x17ZmjRFO_DXp1rGJiWqFYrh9VElpuE3Q5WQOQpJC5mrmW-vDYNyVvZqJqwBQtk2w8VeICLq3z"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">Marcus Vane</h3>
+<p class="font-label-bold text-label-bold text-primary-fixed mb-sm">CTO &amp; Lead Engineer</p>
+<p class="text-on-surface-variant font-body-md text-body-md">The engine room of Awera. Marcus specializes in high-scale infrastructure and performance optimization for global enterprises.</p>
+</div>
+<!-- Sarah Chen -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-highest technical-border rounded-xl overflow-hidden mb-sm relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A high-end portrait of Sarah Chen, a sophisticated woman in her early 30s with a modern professional style. She is looking directly at the camera with a calm, analytical expression. Background is a sleek architectural office in London with glass walls and dark steel beams. The lighting is sophisticated, using a cool blue base palette with vibrant green highlights catching her hair and profile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLwnDJhH3G6OuSBT3vV5UcIcrpkT3-NPHkyn--qhu3FiAu4Is77xjYtec15D-cR8pZclZA9MX8VVYvXFqnpKteg0iG1TLSorYDSmdN_C2roRihWlKlo-pn8rLOCVqeGguj_3Y3PQ1bovePAcOcNjg0S15ORWI4VA6PYN8y34dG-3jBD2TMqpXS5B0pRFlfHwkWUxX6rfIqxD66c1ZyxkkTAC2B9OnD9xCWu0FkdSPemSubzgE9UESCrmByydGHs9aw32ZfoNIh3Hbe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">Sarah Chen</h3>
+<p class="font-label-bold text-label-bold text-primary-fixed mb-sm">Head of Strategy</p>
+<p class="text-on-surface-variant font-body-md text-body-md">Data-driven and conversion-obsessed. Sarah leads the research phase to ensure every design choice is backed by market intelligence.</p>
+</div>
+</div>
+</section>
+<!-- Trust Building CTA -->
+<section class="max-w-container-max mx-auto px-gutter py-xl">
+<div class="bg-primary-fixed p-lg md:p-xl rounded-xl flex flex-col md:flex-row items-center justify-between gap-lg overflow-hidden relative">
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline-xl text-on-primary-fixed mb-sm text-3xl md:text-headline-xl">Ready to elevate your digital presence?</h2>
+<p class="text-on-primary-fixed-variant font-body-lg text-body-lg">We're currently accepting high-impact projects for Q4. Let's discuss your roadmap to growth.</p>
+</div>
+<div class="relative z-10 shrink-0">
+<button class="bg-on-primary-fixed text-primary-fixed px-xl py-md font-headline-md rounded-lg hover:scale-105 transition-transform active-scale text-xl md:text-headline-md">
+            LET'S TALK
+          </button>
+</div>
+<!-- Technical Decor -->
+<div class="absolute top-0 right-0 p-lg opacity-10">
+<span class="material-symbols-outlined text-[200px] text-on-primary-fixed">code</span>
+</div>
+</div>
+</section>
+</main>
+<!-- WhatsApp Widget (BottomNavBar mapping) -->
+<div class="fixed bottom-8 right-8 z-[60]">
+<a class="flex items-center justify-center bg-primary-fixed text-on-primary-fixed rounded-full w-16 h-16 shadow-[0_0_20px_rgba(46,204,113,0.3)] hover:scale-110 hover:shadow-[0_0_30px_rgba(46,204,113,0.5)] transition-all active:scale-90 group relative" href="https://wa.me/yournumber?text=Hi Awera, I'd like to discuss a high-performance web project.">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<div class="absolute right-20 bg-surface-container-high border border-outline-variant px-md py-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+<p class="font-label-bold text-label-bold text-on-surface">Chat with us</p>
+</div>
+</a>
+</div>
+<!-- Footer -->
+<footer class="w-full py-lg px-gutter border-t border-outline-variant bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-lg">
+<div class="space-y-sm">
+<h2 class="font-headline-md text-headline-md font-bold text-on-background">Awera Web Agency</h2>
+<p class="text-on-surface-variant max-w-xs">Hackney's premier high-performance digital collective. Engineering excellence since 2018.</p>
+<div class="flex gap-md text-on-surface-variant">
+<span class="material-symbols-outlined hover:text-primary-fixed cursor-pointer">share</span>
+<span class="material-symbols-outlined hover:text-primary-fixed cursor-pointer">alternate_email</span>
+<span class="material-symbols-outlined hover:text-primary-fixed cursor-pointer">public</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-xl">
+<div class="flex flex-col gap-sm">
+<span class="font-label-bold text-label-bold text-on-background uppercase">Agency</span>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Home</a>
+<a class="text-primary-fixed" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Services</a>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-label-bold text-label-bold text-on-background uppercase">Work</span>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Portfolio</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-label-bold text-label-bold text-on-background uppercase">Legal</span>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-lg pt-md border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-sm">
+<p class="text-on-surface-variant text-label-sm font-label-sm">© 2024 Awera Web Agency. All rights reserved.</p>
+<div class="flex items-center gap-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<p class="text-on-surface-variant text-label-sm font-label-sm">Built with Precision in Hackney</p>
+</div>
+</div>
+</footer>
+</body></html>
